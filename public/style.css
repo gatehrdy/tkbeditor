@@ -1,0 +1,95 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 20px;
+}
+
+h1 {
+    text-align: center;
+}
+
+#editor {
+    box-shadow: 2px 2px 4px grey;
+    padding: 10px;
+    min-height: 55vh;
+    max-height: 55vh;
+    overflow: scroll;
+    overflow-x: hidden;
+    background-color: #fff;
+    border-radius: 4px;
+    text-align: left;
+}
+
+.form-control {
+    margin-bottom: 10px;
+}
+
+#fileUlDiv {
+    display: flex;
+    justify-content: center;
+}
+
+#fileList {
+    display: flex;
+    flex-wrap: wrap;
+    font-weight: bold;
+    font-size: large;
+    list-style: none;
+    margin-top: 1.2em;
+    padding: 0;
+    margin-block-start: 1em;
+    margin-block-end: 0em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+    padding-inline-start: 0px;
+    justify-content: center;
+}
+
+#fileList li {
+    display: flex;
+    gap: 10px;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#fileList li button {
+    border-radius: 7px;
+
+}
+
+#fileList li:hover {
+    cursor: pointer;
+}
+
+#loadBtn {
+    display: none;
+}
+
+.bold {
+    font-weight: bold;
+}
+
+.italic {
+    font-style: italic;
+}
+
+.underline {
+    text-decoration-line: underline;
+}
+
+.sup {
+    vertical-align: super;
+}
+
+.sub {  
+    vertical-align: sub;
+}
+
+@media screen and (max-width: 550px) {
+    #editor {
+        font-size: 1.5em;
+    }
+}
+
+
+
+
